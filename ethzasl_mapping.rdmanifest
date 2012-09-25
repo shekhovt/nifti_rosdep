@@ -3,7 +3,7 @@ check-presence-script: |
   #!/bin/bash
   cd `rosstack find nifti_mapping`
   cd .. 
-  if [-d gpgpu]
+  if [ -d gpgpu ]
   then
     cd gpgpu
     git pull
