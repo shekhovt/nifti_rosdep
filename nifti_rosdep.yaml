@@ -14,3 +14,7 @@ cuda-drivers:
   ubuntu:
     source:
       uri: https://raw.github.com/ethz-asl/nifti_rosdep/master/cuda-driver.rdmanifest
+ethzasl_mapping:
+  ubuntu:
+    source:
+      uri: https://raw.github.com/ethz-asl/nifti_rosdep/master/ethzasl_mapping.rdmanifest
