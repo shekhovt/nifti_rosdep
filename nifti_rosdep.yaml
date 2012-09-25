@@ -10,3 +10,7 @@ libssh2-1-dev:
   ubuntu:
     apt:
       packages: libssh2-1-dev
+cuda-drivers:
+  ubuntu:
+    source:
+      uri: https://raw.github.com/ethz-asl/nifti_rosdep/master/cuda-driver.rdmanifest
