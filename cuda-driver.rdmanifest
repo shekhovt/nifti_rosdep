@@ -1,5 +1,5 @@
-uri: https://raw.github.com/ethz-asl/nifti_rosdep/master/README.md
-check-presence-script:|
+uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.md'
+check-presence-script: |
   #!/bin/bash
   exit 0
 install-script: |
