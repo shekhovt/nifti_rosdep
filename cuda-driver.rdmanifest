@@ -9,7 +9,7 @@ install-script: |
 		fi
 		mkdir -p $ROS_ROOT/../ros-deps
 		cd $ROS_ROOT/../ros-deps
-		wget -nc --tries=10 http://developer.download.nvidia.com/compute/cuda/3_1/drivers/     ------------------>devdriver_3.1_linux_${bits}_${version}.run
+		wget -nc --tries=10 http://developer.download.nvidia.com/compute/cuda/3_1/drivers/devdriver_3.1_linux_${bits}_${version}.run
 		sudo bash devdriver_3.1_linux_${bits}_${version}.run
 		rm -f devdriver_3.1_linux_${bits}_${version}.run
 		cd ..
