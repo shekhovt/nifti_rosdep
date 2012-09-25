@@ -1,3 +1,4 @@
+uri:
 install-script: |
   #!/bin/bash
   echo "TODO: finish this scrip"
