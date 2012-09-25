@@ -3,16 +3,16 @@ check-presence-script: |
   #!/bin/bash
   cd `rosstack find nifti_mapping`
   cd .. 
-  if [ -d ethzasl_mapping ]
+  if [ -d gpgpu ]
   then
-    cd ethzasl_mapping
+    cd gpgpu
     git pull
   else
-    git clone --recursive git://github.com/ethz-asl/ros-mapping.git ethzasl_mapping
+    git clone http://ram.umd.edu/git/ros/gpgpu.git
   fi
-  rosdep install ethzasl_mapping
-  rosmake ethzasl_mapping
+  rosdep install gpgpu
+  rosmake gpgpu
   exit 0
 install-script: |
   #!/bin/bash
-  
+ 
