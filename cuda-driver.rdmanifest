@@ -1,0 +1,17 @@
+install-script: |
+	version=256.40
+	if [ ! -f /usr/lib/libnvidia-compiler.so.${version} ]; then
+		arch=`arch`
+		if [ "x86_64" = "$arch" ]; then
+			bits=64
+		else
+			bits=32
+		fi
+		mkdir -p $ROS_ROOT/../ros-deps
+		cd $ROS_ROOT/../ros-deps
+		wget -nc --tries=10 http://developer.download.nvidia.com/compute/cuda/3_1/drivers/     ------------------>devdriver_3.1_linux_${bits}_${version}.run
+		sudo bash devdriver_3.1_linux_${bits}_${version}.run
+		rm -f devdriver_3.1_linux_${bits}_${version}.run
+		cd ..
+		rmdir --ignore-fail-on-non-empty ros-deps
+	fi
