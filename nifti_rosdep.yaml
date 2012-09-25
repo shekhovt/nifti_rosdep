@@ -1,0 +1,12 @@
+iw:
+  ubuntu:
+    apt:
+      pacakges: iw
+acpi:
+  ubuntu:
+    apt:
+      pacakges: acpi
+libssh2-1-dev:
+  ubuntu:
+    apt:
+      pacakges: libssh2-1-dev
