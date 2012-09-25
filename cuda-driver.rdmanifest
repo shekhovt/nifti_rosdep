@@ -1,4 +1,8 @@
 uri:
+check-presence-script:|
+  #!/bin/bash
+  echo "TODO: finish this script"
+  exit 0
 install-script: |
   #!/bin/bash
-  echo "TODO: finish this scrip"
+  echo "TODO: finish this script"
