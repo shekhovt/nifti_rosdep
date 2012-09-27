@@ -22,3 +22,7 @@ stack-gpgpu:
   ubuntu:
     source:
       uri: https://raw.github.com/ethz-asl/nifti_rosdep/master/gpgpu.rdmanifest
+libudev-dev:
+  ubuntu:
+    apt:
+      packages: libudev-dev
