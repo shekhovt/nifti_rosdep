@@ -26,3 +26,7 @@ libudev-dev:
   ubuntu:
     apt:
       packages: libudev-dev
+build-essential:
+  ubuntu:
+    apt:
+      packages: build-essential
