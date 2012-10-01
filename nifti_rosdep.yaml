@@ -1,6 +1,10 @@
 iw:
   ubuntu:
     apt:
+      packages: ros-fuerte-hector-slam
+iw:
+  ubuntu:
+    apt:
       packages: iw
 acpi:
   ubuntu:
