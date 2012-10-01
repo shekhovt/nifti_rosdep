@@ -1,4 +1,4 @@
-iw:
+hector-slam:
   ubuntu:
     apt:
       packages: ros-fuerte-hector-slam
