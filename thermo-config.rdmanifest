@@ -1,7 +1,7 @@
 uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.md'
 check-presence-script: |
   #!/bin/bash
-  cd `rosstack find thermo_cam`
+  roscd thermo_cam
   ./install.sh
   exit 0
 install-script: |
