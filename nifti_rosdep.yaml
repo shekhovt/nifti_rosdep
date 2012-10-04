@@ -35,26 +35,26 @@ build-essential:
     apt:
       packages: build-essential
 libudev-dev:
-    ubuntu:
+  ubuntu:
     apt:
-    packages:  libudev-dev
+      packages:  libudev-dev
 build-essential:
-    ubuntu:
+  ubuntu:
     apt:
-    packages:  build-essential
+      packages:  build-essential
 qt4-dev-tools:
-    ubuntu:
+  ubuntu:
     apt:
-    packages:  qt4-dev-tools
+      packages:  qt4-dev-tools
 libqt4-dev:
-    ubuntu:
+  ubuntu:
     apt:
-    packages:  libqt4-dev
+      packages:  libqt4-dev
 libqt4-core:
-    ubuntu:
+  ubuntu:
     apt:
-    packages:  libqt4-core
+      packages:  libqt4-core
 thermo-config:
-                ubuntu: |
-                        roscd thermo_cam
-                        ./install.sh      
+  ubuntu: |
+    roscd thermo_cam
+    ./install.sh
