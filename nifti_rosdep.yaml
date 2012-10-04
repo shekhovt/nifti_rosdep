@@ -55,7 +55,6 @@ libqt4-core:
     apt:
       packages:  libqt4-core
 thermo-config:
-  ubuntu: |
-    echo "Bla Bla"
-    roscd thermo_cam
-    ./install.sh
+  ubuntu:
+    source:
+      uri: https://raw.github.com/shekhovt/nifti_rosdep/master/thermo-config.rdmanifest
