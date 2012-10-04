@@ -57,4 +57,4 @@ libqt4-core:
 thermo-config:
   ubuntu: |
     roscd thermo_cam
-    ./install.sh
+    sudo ./install.sh
