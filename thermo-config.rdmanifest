@@ -9,5 +9,4 @@ check-presence-script: |
   roscd thermo_cam
   pwd
   sudo ./install.sh
-  exit 0
-exec-path: .
+  exit 1
