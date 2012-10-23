@@ -7,11 +7,17 @@ install-script: |
   touch ./install.log
 check-presence-script: |
   #!/bin/bash
+  if [[ -n $(find . -name "install.log") ]]
+  then
+  else
+    echo "never was installed"
+    exit 1
+  fi
   if [[ -n $(find data -newer "install.log" -type f 2>/dev/null) ]]
   then
-  # there are modifications
-  exit 1
+    echo "not up to date"
+    exit 1
   else
-  # no modifications
-  exit 0
+    echo "up to date"
+    exit 0
   fi
