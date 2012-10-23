@@ -9,6 +9,7 @@ check-presence-script: |
   #!/bin/bash
   if [[ -n $(find . -name "install.log") ]]
   then
+    echo "nothing fucking interesting"
   else
     echo "never was installed"
     exit 1
