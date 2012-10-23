@@ -7,11 +7,11 @@ install-script: |
   touch ./install.log
 check-presence-script: |
   #!/bin/bash
-if [[ -n $(find data -newer "install.log" -type f 2>/dev/null) ]]
-then
-# there are modifications
+  if [[ -n $(find data -newer "install.log" -type f 2>/dev/null) ]]
+  then
+  # there are modifications
   exit 1
-else
-# no modifications
+  else
+  # no modifications
   exit 0
-fi
+  fi
