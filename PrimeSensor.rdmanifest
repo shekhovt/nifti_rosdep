@@ -1,0 +1,17 @@
+uri: 'http://openni.org/downloads/sensor-bin-linux-x64-v5.1.0.41.tar.bz2'
+install-script: |
+  #!/bin/bash
+  pwd
+  ls
+  sudo ./install.sh
+check-presence-script: |
+  #!/bin/bash
+  if [[ -n $(find /usr/etc -name "primesense") ]]
+  then
+    echo "installed"
+    exit 0
+  else
+    echo "not installed"
+    exit 1
+  fi
+exec-path: Sensor-Bin-Linux-x64-v5.1.0.41

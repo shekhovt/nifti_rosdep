@@ -62,6 +62,10 @@ OpenNI:
   ubuntu:
     source:
       uri: https://raw.github.com/shekhovt/nifti_rosdep/master/OpenNI.rdmanifest
+PrimeSensor:
+  ubuntu:
+    source:
+      uri: https://raw.github.com/shekhovt/nifti_rosdep/master/PrimeSensor.rdmanifest
 openni-config:
   ubuntu:
     source:
