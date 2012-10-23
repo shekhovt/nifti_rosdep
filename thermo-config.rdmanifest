@@ -4,7 +4,14 @@ install-script: |
   source ${ROS_ROOT}/../rosbash/rosbash
   roscd thermo_cam
   sudo ./install.sh
+  touch ./install.log
 check-presence-script: |
   #!/bin/bash
-  echo "allways install"
+if [[ -n $(find data -newer "install.log" -type f 2>/dev/null) ]]
+then
+# there are modifications
   exit 1
+else
+# no modifications
+  exit 0
+fi
