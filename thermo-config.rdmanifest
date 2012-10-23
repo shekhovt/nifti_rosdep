@@ -20,6 +20,6 @@ check-presence-script: |
       exit 0
     fi
   else
-    echo "never was installed"
+    echo "new install"
     exit 1
   fi
