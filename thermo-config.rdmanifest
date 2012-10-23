@@ -1,4 +1,4 @@
-uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/some_shit.tar'
+uri: 'https://raw.github.com/shekhovt/nifti_rosdep/master/some_shit.tar'
 install-script: |
   #!/bin/bash
   echo "About to run make install"
