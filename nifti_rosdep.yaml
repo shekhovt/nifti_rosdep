@@ -58,3 +58,11 @@ thermo-config:
   ubuntu:
     source:
       uri: https://raw.github.com/shekhovt/nifti_rosdep/master/thermo-config.rdmanifest
+OpenNI:
+  ubuntu:
+    source:
+      uri: https://raw.github.com/shekhovt/nifti_rosdep/master/OpenNI.rdmanifest
+openni-config:
+  ubuntu:
+    source:
+      uri: https://raw.github.com/shekhovt/nifti_rosdep/master/openni-config.rdmanifest
