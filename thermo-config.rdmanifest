@@ -4,5 +4,5 @@ install-script: |
   echo "About to run make install"
 check-presence-script: |
   #!/bin/bash
-  print "not installed"
+  echo "not installed"
   exit 1
