@@ -1,12 +1,12 @@
-uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.tar'
+uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/some_shit.tar'
 install-script: |
   #!/bin/bash
   echo "About to run make install"
-check-presence-script: |
-  #!/bin/bash
-  echo "I am getting motherfucking angry about this stupid scripts"
   source ${ROS_ROOT}/../rosbash/rosbash
   roscd thermo_cam
   pwd
   sudo ./install.sh
+check-presence-script: |
+  #!/bin/bash
+  echo "I am getting motherfucking angry about this stupid scripts"
   exit 1
