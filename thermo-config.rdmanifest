@@ -1,4 +1,4 @@
-uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/thermo-config.rdmanifest'
+uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.tar'
 install-script: |
   #!/bin/bash
   echo "About to run make install"
