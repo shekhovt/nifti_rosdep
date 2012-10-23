@@ -1,4 +1,4 @@
-uri: 'http://openni.org/downloads/openni-bin-dev-linux-x32-v1.5.2.23.tar.bz2'
+uri: 'http://openni.org/downloads/openni-bin-dev-linux-x64-v1.5.2.23.tar.bz2'
 install-script: |
   #!/bin/bash
   pwd
@@ -14,4 +14,4 @@ check-presence-script: |
     echo "not installed"
     exit 1
   fi
-exec-path: OpenNI-Bin-Dev-Linux-x32-v1.5.2.23
+exec-path: OpenNI-Bin-Dev-Linux-x64-v1.5.2.23
