@@ -6,4 +6,4 @@ check-presence-script: |
   #!/bin/bash
   echo "not installed"
   exit 1
-exec-path:~
+exec-path: ~
