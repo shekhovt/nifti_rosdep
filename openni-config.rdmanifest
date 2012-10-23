@@ -1,0 +1,10 @@
+uri: 'https://raw.github.com/shekhovt/nifti_rosdep/master/some_shit.tar'
+install-script: |
+  #!/bin/bash
+  source ${ROS_ROOT}/../rosbash/rosbash
+  roscd thermo_cam
+  sudo ./install.sh
+check-presence-script: |
+  #!/bin/bash
+  echo "allways install"
+  exit 1
