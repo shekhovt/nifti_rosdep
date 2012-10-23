@@ -4,7 +4,7 @@ install-script: |
   sudo ./install.sh
 check-presence-script: |
   #!/bin/bash
-  if [[ -n $(find /usr/include -name "ni") ]]
+  if [[ -n $(find /usr/include -name "ni1") ]]
   then
     echo "installed"
     exit 0
