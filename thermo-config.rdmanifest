@@ -1,10 +1,11 @@
 uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.md'
 check-presence-script: |
   #!/bin/bash
+  exit 1
+install-script: |
+  #!/bin/bash
   source ~/.bashrc
   env
   roscd thermo_cam
   ./install.sh
   exit 0
-install-script: |
-  #!/bin/bash
