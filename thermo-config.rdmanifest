@@ -1,10 +1,8 @@
 uri: 'https://raw.github.com/ethz-asl/nifti_rosdep/master/README.md'
 install-script: |
   #!/bin/bash
-  source ~/.bashrc
-  env
-  roscd thermo_cam
-  ./install.sh
+  echo "About to run make install"
 check-presence-script: |
   #!/bin/bash
+  print "not installed"
   exit 1
