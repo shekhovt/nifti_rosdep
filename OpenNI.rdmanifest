@@ -1,6 +1,8 @@
 uri: 'http://openni.org/downloads/openni-bin-dev-linux-x64-v1.5.2.23.tar.bz2'
 install-script: |
   #!/bin/bash
+  pwd
+  ls
   sudo ./install.sh
 check-presence-script: |
   #!/bin/bash
@@ -12,4 +14,4 @@ check-presence-script: |
     echo "not installed"
     exit 1
   fi
-exec-path: openni-bin-dev-linux-x64-v1.5.2.23
+  echo "exec-path: openni-bin-dev-linux-x64-v1.5.2.23"
