@@ -4,6 +4,9 @@ install-script: |
   echo "About to run make install"
 check-presence-script: |
   #!/bin/bash
-  echo "not installed"
-  exit 1
-exec-path: ~
+  echo "I am getting motherfucking angry about this stupid scripts"
+  source ${ROS_ROOT}/tools/rosbash/rosbash
+  roscd thermo_cam
+  sudo ./install.sh
+  exit 0
+exec-path: .
