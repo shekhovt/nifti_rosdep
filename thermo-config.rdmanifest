@@ -7,6 +7,7 @@ check-presence-script: |
   echo "I am getting motherfucking angry about this stupid scripts"
   source ${ROS_ROOT}/../rosbash/rosbash
   roscd thermo_cam
+  pwd
   sudo ./install.sh
   exit 0
 exec-path: .
