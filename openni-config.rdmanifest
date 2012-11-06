@@ -7,6 +7,7 @@ install-script: |
   touch ./install.log
 check-presence-script: |
   #!/bin/bash
+  echo "HALLO!!!"
   source ${ROS_ROOT}/../rosbash/rosbash
   roscd openni_cam
   if [[ -n $(find . -name "install.log") ]]
