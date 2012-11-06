@@ -2,9 +2,24 @@ uri: 'https://raw.github.com/shekhovt/nifti_rosdep/master/some_shit.tar'
 install-script: |
   #!/bin/bash
   source ${ROS_ROOT}/../rosbash/rosbash
-  roscd thermo_cam
+  roscd openni_cam
   sudo ./install.sh
+  touch ./install.log
 check-presence-script: |
   #!/bin/bash
-  echo "allways install"
-  exit 1
+  source ${ROS_ROOT}/../rosbash/rosbash
+  roscd openni_cam
+  if [[ -n $(find . -name "install.log") ]]
+  then
+    if [[ -n $(find config -newer "install.log" -type f 2>/dev/null) ]]
+    then
+      echo "not up to date"
+      exit 1
+    else
+      echo "up to date"
+      exit 0
+    fi
+  else
+    echo "new install"
+    exit 1
+  fi
