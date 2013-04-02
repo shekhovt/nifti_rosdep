@@ -70,3 +70,7 @@ openni-config:
   ubuntu:
     source:
       uri: https://raw.github.com/shekhovt/nifti_rosdep/master/openni-config.rdmanifest
+camera-pose:
+  ubuntu:
+    apt:
+      packages: ros-fuerte-camera-pose
