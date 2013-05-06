@@ -1,8 +1,20 @@
-uri: 'http://www.openni.org/wp-content/uploads/2012/12/OpenNI-Bin-Dev-Linux-x86-v1.5.4.0.tar.zip'
+uri: 'https://raw.github.com/shekhovt/nifti_rosdep/master/some_shit.tar'
+#uri: 'http://www.openni.org/wp-content/uploads/2012/12/OpenNI-Bin-Dev-Linux-x86-v1.5.4.0.tar.zip'
 install-script: |
   #!/bin/bash
   pwd
   ls
+  MACHINE_TYPE=`uname -m`
+  if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+    # 64-bit stuff here
+    wget 'http://www.openni.org/wp-content/uploads/2012/12/OpenNI-Bin-Dev-Linux-x64-v1.5.4.0.tar.zip'
+  else
+    # 32-bit stuff here
+    wget 'http://www.openni.org/wp-content/uploads/2012/12/OpenNI-Bin-Dev-Linux-x86-v1.5.4.0.tar.zip'
+  fi
+  unzip OpenNI-Bin-Dev*
+  tar vfx OpenNI-Bin-Dev*.bz2
+  cd ./*/
   sudo ./install.sh
 check-presence-script: |
   #!/bin/bash
@@ -14,4 +26,4 @@ check-presence-script: |
     echo "not installed"
     exit 1
   fi
-exec-path: OpenNI-Bin-Dev-Linux-x64-v1.5.2.23
+#exec-path: OpenNI-Bin-Dev-Linux-x64-v1.5.2.23
