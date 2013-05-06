@@ -25,4 +25,4 @@ check-presence-script: |
     echo "not installed"
     exit 1
   fi
-exec-path: Sensor-Bin-Linux-x64-v5.1.0.41
+#exec-path: Sensor-Bin-Linux-x64-v5.1.0.41
