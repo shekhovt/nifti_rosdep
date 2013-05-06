@@ -1,4 +1,4 @@
-uri: 'http://openni.org/downloads/openni-bin-dev-linux-x64-v1.5.2.23.tar.bz2'
+uri: 'http://www.openni.org/wp-content/uploads/2012/12/OpenNI-Bin-Dev-Linux-x86-v1.5.4.0.tar.zip'
 install-script: |
   #!/bin/bash
   pwd
