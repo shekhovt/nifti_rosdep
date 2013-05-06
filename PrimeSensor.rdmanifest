@@ -3,6 +3,17 @@ install-script: |
   #!/bin/bash
   pwd
   ls
+  MACHINE_TYPE=`uname -m`
+  if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+    # 64-bit stuff here
+    wget 'http://www.openni.org/wp-content/uploads/2012/12/Sensor-Bin-Linux-x64-v5.1.2.1.tar.zip'
+  else
+    # 32-bit stuff here
+    wget 'http://www.openni.org/wp-content/uploads/2012/12/Sensor-Bin-Linux-x86-v5.1.2.1.tar.zip'
+  fi
+  unzip Sensor-Bin-Linux*
+  tar vfx Sensor-Bin-Linux*.bz2
+  cd Sensor-Bin-Linux-x64-v5.1.2.1
   sudo ./install.sh
 check-presence-script: |
   #!/bin/bash
